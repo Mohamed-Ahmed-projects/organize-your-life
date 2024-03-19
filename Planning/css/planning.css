@@ -1,0 +1,77 @@
+body {
+    background-color: #fff;
+}
+body > .container {
+    background-color: #eee;
+    height: fit-content;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding:  20px 0;
+    margin-top:20px;
+
+}
+body .container form {
+    display: grid;
+    grid-template-columns:  repeat(3, calc((100% - 60px)/3));
+    justify-content: space-evenly;
+}
+body .container form input {
+    margin-bottom: 20px;
+    min-height: 40px;
+    padding: 3px 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+}
+body .container form input.name {
+    grid-area: 1/1/2/2;
+}
+body .container form input.why {
+    grid-area: 1/2/3/3;
+}
+body .container form input.how {
+    grid-area: 1/3/3/4;
+} 
+body .container form input.deadLine {
+    grid-area: 3/1.5/4/2.5;
+}
+body .container form input.setGoal {
+    grid-area: 4/2/5/3;
+    background-color: royalblue;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom:0;
+    margin-top: -10px;
+}
+body .container form input:not(:last-child):focus {
+    border: 2px solid royalblue;
+}
+body .container.myGoals {
+    background-color: inherit;
+    padding: 20px 0;
+}
+/* input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+} */
+footer {
+    position: sticky;
+    bottom:0;
+    right: 0;
+    width: 100%;
+    margin-top: 64px;
+}
